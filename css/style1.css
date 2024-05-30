@@ -1,0 +1,227 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 246, 246);
+}
+
+.menu svg {
+    height: 20px;
+}
+
+.menu {
+    width: 100vw;
+    padding: 20px calc((100vw - 1280px) / 2);
+    display: flex;
+    border-bottom: 2px solid rgb(225, 225, 225);
+    justify-content: space-between;
+    align-items: end;
+} .menu__items {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+} .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main {
+    width: 1280px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#empty {
+    border: none;
+    background-color: #00000000;
+    color: red;
+} #empty:hover {
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.text_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 36%;
+} 
+
+.items__count {
+    font-weight: bold;
+}
+
+.items {
+    flex-basis: 64%;
+    padding: 1%;
+}
+
+.cart__items {
+    flex-basis: 34%;
+    padding: 1%;
+    background-color: white;
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.item {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2%;
+    border: 2px solid rgb(225, 225, 225);
+}
+
+.item__image {
+    height: 140px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 30px;
+} .item__image img {
+    height: 100%;
+}
+
+.item_name {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.1em;
+} .author {
+    width: 100%;
+} .category {
+    background-color: rgb(193, 205, 255);
+    color: rgb(104, 129, 228);
+    border-radius: 2px;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px 15px;
+    line-height: 100%;
+}
+
+.counter {
+    border: 2px solid rgb(225, 225, 225);
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.counter input {
+    width: 2em;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    background-color: #00000000;
+} .counter span {
+    width: 2em;
+    text-align: center;
+    padding: 10px;
+} .counter input:hover {
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    align-items: center;
+} .price {
+    font-weight: bold;
+}
+.actions svg {
+    height: 20px;
+}
+
+.right {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 140px;
+    padding-right: 10px;
+}
+
+.cart__items svg {
+    width: 20px;
+} .cart__items svg path {
+    fill: blue;
+} .cart__items a {
+    margin: 20px 0;
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} .cart__items .total, .checked > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.checked {
+    margin-bottom: 20px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+[type=submit] {
+    width: 100%;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+} [type=submit]:hover {
+    cursor: pointer;
+}
+
+.modal {
+    z-index: 3;
+} .modal p {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 40px;
+    left: calc(50% - 250px);
+    top: calc(50% - 75px);
+    text-align: center;
+} .modal a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #00000099;
+}
